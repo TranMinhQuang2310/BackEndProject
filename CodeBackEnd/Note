@@ -1,0 +1,42 @@
+-Tao project web api : dotnet new webapi
+-Cau truc project tao 3 folder : Controller,Business,DataModel
+    Controller: xu li Api
+    Business : xu li nghiep vu cua cac Api
+    DataModel : lien ket voi csdl
+        Entity
+        DTO(Data transfer object)
+        DbContext: khai bao trong model co bao nhieu thuc the
+             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=LAPTOP-OCQB3QFO;Database=GymProJectv2;User Id=sa;Password=123456;Trusted_Connection=True;integrated security=false;trustServerCertificate=true;");
+        }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            // Customize the ASP.NET Identity model and override the defaults if needed.
+            // For example, you can rename the ASP.NET Identity table names and more.
+            // Add your customizations after calling base.OnModelCreating(builder);
+        }
+-Cach migrations ra co so du lieu
+B1: dotnet ef migrations add (ten migrations)
+B2: dotnet ef database update
+** MUon build thi dung ham : dotnet build
+
+-Lam truoc khi chay postman : dotnet run
+ + Trong postman:
+    Post: 
+        De duong link vd : http://localhost:5000/api/QuanLyKho/ThemMoiDichVu
+        Chon body
+        Chon raw
+        chon JSON
+        nhap lenh: vd : {
+                            "ID":0,
+                            "TenDV": "Dich Vu 1",
+                            "DonGia": 7600,
+                            "GhiChu": "Ghi chu 1"
+                        }
+
+- Phan tai lieu Task :
+    Input : Nhin vao Controller
+    Output : Nhin vao Business
+

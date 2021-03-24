@@ -1,0 +1,1122 @@
+{
+	"info": {
+		"_postman_id": "eba5815f-1a9f-4cea-8611-79f0be6cb452",
+		"name": "CapstoneProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "QuanLyHangHoa",
+			"item": [
+				{
+					"name": "ThemMoiHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\":0,\r\n    \"TenSP\": \"San Pham 9\",\r\n    \"MaSP\": \"sp3\",\r\n    \"DonGia\": 7600,\r\n    \"NgayNhap\" : \"2021-05-03\",\r\n    \"SoLuong\" : 10,\r\n    \"MoTa\": \"abv\",\r\n    \"IDNhomHangHoa\": 1,\r\n    \"HinhAnh\": \"kdjfdf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/ThemMoiHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"ThemMoiHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LayDSHangHoa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/LayDSHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"LayDSHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LayHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/LayHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"LayHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuaHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n        \"tenSP\": \"adsssassss\",\r\n        \"maSP\": \"sadsa\",\r\n        \"donGia\": 902909,\r\n        \"ngayNhap\": \"2021-10-03T00:00:00\",\r\n        \"soLuong\": 3,\r\n        \"moTa\": \"dákldsa\",\r\n        \"daDuyet\": false,\r\n        \"hinhAnh\": null,\r\n        \"tenNhomHangHoa\": \"dsds\",\r\n        \"idNhomHangHoa\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/SuaHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"SuaHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XoaHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/XoaHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"XoaHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XuatHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\":7,\r\n    \"SoLuong\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/XuatHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"XuatHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ThemMoiNhomHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\":0,\r\n    \"TenNhomHangHoa\": \"Nhom hang hoa 9\",\r\n    \"MaNhomHangHoa\": \"nhh1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/ThemMoiNhomHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"ThemMoiNhomHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LayDSNhomHangHoa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/LayDSNhomHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"LayDSNhomHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XoaNhomHangHoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/XoaNhomHangHoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"XoaNhomHangHoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ThemMoiDichVu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 0,\r\n    \"TenDV\": \"Dich Vu 12\",\r\n    \"DonGia\": 7600,\r\n    \"GhiChu\": \"Ghi chu 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/ThemMoiDichVu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"ThemMoiDichVu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LayDSDichVu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/LayDSDichVu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"LayDSDichVu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LayDichVu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/LayDichVu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"LayDichVu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuaDichVu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n        \"tenDV\": \"Dich Vu 12\",\r\n        \"donGia\": 7600000,\r\n        \"ghiChu\": \"Ghi chu 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/SuaDichVu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"SuaDichVu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XoaDichVu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/QuanLyKho/Xoa_DichVu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"QuanLyKho",
+								"Xoa_DichVu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KeToan",
+			"item": [
+				{
+					"name": "Lap_PhieuChi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MaPhieuChi\" : \"pc012\",\n    \"SoPhieuChi\" : \"20\",\n    \"NgayLapPhieu\" : \"2021-03-13\",\n    \"TenNVLapPhieu\" : \"Nguyen Van A\",\n    \"HinhThucChi\" : \"ht1\",\n    \"MaNguoiNhan\" : \"02\",\n    \"HoTenNguoiNhan\" : \"Nguyen Van B\",\n    \"LoaiPhieuChi\" : \"l1\",\n    \"DaDuyet\" : false,\n    \"TTLienLac\" : \"abc\",\n    \"LyDoChi\" : \"Thix thi chi\",\n    \"TenKH\" : \"Khach Hang\",\n    \"TenNVBanHang\" : \"NVBH\",\n    \"TenNhanVienChiuTrachNhiem\" : \"NVCTN\",\n    \"ChucVu\" : \"Co chu tich\",\n    \"IDNhanVienLapPhieu\" : 1,\n    \"IDNhanVienBanHang\" : 2,\n    \"DSSanPham\":[{\n        \"ID\" : 7,\n        \"DonGia\": 2,\n        \"SoLuong\" : 10\n    },\n    {\n        \"ID\" : 11,\n        \"DonGia\": 4,\n        \"SoLuong\" : 10\n    }]\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lap_PhieuChi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lap_PhieuChi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_DSPhieuChi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_DSPhieuChi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_DSPhieuChi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_PhieuChi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\": 12\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_PhieuChi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_PhieuChi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Luu_PhieuChi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 12,\n    \"maPhieuChi\": \"pc08\",\n    \"soPhieuChi\": \"20\",\n    \"ngayLapPhieu\": \"2021-03-13T00:00:00\",\n    \"tenNVLapPhieu\": \"Nguyen Van A\",\n    \"hinhThucChi\": \"ht1\",\n    \"maNguoiNhan\": \"02\",\n    \"hoTenNguoiNhan\": \"Nguyen Van B\",\n    \"loaiPhieuChi\": \"l1\",\n    \"daDuyet\": false,\n    \"ttLienLac\": \"abc\",\n    \"lyDoChi\": \"Thix thi chi\",\n    \"tenKH\": \"Khach Hang\",\n    \"tenNVBanHang\": \"NVBH\",\n    \"tenNhanVienChiuTrachNhiem\": \"NVCTN\",\n    \"chucVu\": \"Co chu tich\",\n    \"idNhanVienLapPhieu\": 1,\n    \"idNhanVienBanHang\": 2,\n    \"dsSanPham\": [\n        {\n            \"id\": 7,\n            \"tenSP\": \"adsssas\",\n            \"maSP\": \"sadsa\",\n            \"donGia\": 902909,\n            \"ngayNhap\": \"2021-10-03T00:00:00\",\n            \"soLuong\": 2,\n            \"moTa\": \"dákldsa\",\n            \"daDuyet\": false,\n            \"hinhAnh\": null,\n            \"tenNhomHangHoa\": null,\n            \"idNhomHangHoa\": 0\n        },\n        {\n            \"id\": 11,\n            \"tenSP\": \"San Pham 8\",\n            \"maSP\": \"sp3\",\n            \"donGia\": 7600,\n            \"ngayNhap\": \"2021-05-03T00:00:00\",\n            \"soLuong\": 10,\n            \"moTa\": \"abv\",\n            \"daDuyet\": false,\n            \"hinhAnh\": \"kdjfdf\",\n            \"tenNhomHangHoa\": null,\n            \"idNhomHangHoa\": 0\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Luu_PhieuChi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Luu_PhieuChi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Duyet_PhieuChi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\": 12\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Duyet_PhieuChi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Duyet_PhieuChi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xoa_PhieuChi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\": 13\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Xoa_PhieuChi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Xoa_PhieuChi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lap_PhieuThu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MaPhieuThu\": \"pt03\",\n    \"SoPhieuThu\": \"20\",\n    \"NgayLapPhieu\": \"2021-03-13\",\n    \"LoaiThue\": \"lt1\",\n    \"LyDoNop\": \"thix thi nop\",\n    \"LoaiPhieuThu\" : \"l1\",\n    \"DaDuyet\": false,\n    \"IDKhachHang\": 1,\n    \"IDNhanVienLapPhieu\": 1,\n    \"IDNhanVienBanHang\": 1,\n    \"DSSanPham\": [\n        {\n            \"ID\": 7,\n            \"DonGia\": 2,\n            \"SoLuong\": 10\n        },\n        {\n            \"ID\": 11,\n            \"DonGia\": 4,\n            \"SoLuong\": 10\n        }\n        \n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lap_PhieuThu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lap_PhieuThu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_DSPhieuThu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_DSPhieuThu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_DSPhieuThu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_PhieuThu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\": 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_PhieuThu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_PhieuThu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Luu_PhieuThu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\" : 8,\n    \"MaPhieuThu\": \"pt01\",\n    \"SoPhieuThu\": \"20\",\n    \"NgayLapPhieu\": \"2021-03-13\",\n    \"LoaiThue\": \"lt1\",\n    \"LyDoNop\": \"thix thi nop\",\n    \"DaDuyet\": false,\n    \"IDKhachHang\": 1,\n    \"IDNhanVienLapPhieu\": 1,\n    \"IDNhanVienBanHang\": 1,\n    \"DSSanPham\": [\n        {\n            \"ID\": 1,\n            \"DonGia\": 2,\n            \"SoLuong\": 10\n        },\n        {\n            \"ID\": 2,\n            \"DonGia\": 4,\n            \"SoLuong\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Luu_PhieuThu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Luu_PhieuThu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Duyet_PhieuThu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\" : 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Duyet_PhieuThu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Duyet_PhieuThu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xoa_PhieuThu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\" : 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Xoa_PhieuThu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Xoa_PhieuThu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lap_HoaDon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"MaHD\": \"hd01\",\n    \"MaChiNhanh\": \"cn20\",\n    \"MaSoThue\": \"xyz01\",\n    \"TenDoanhNghiep\": \"lap roi pha\",\n    \"DiaChiChiNhanh\": \"sao hoa\",\n    \"SoThue\": \"0000co\",\n    \"HinhThucThanhToan\": \"no\",\n    \"DaDuyet\": false,\n    \"NgayLapHD\" : \"2021-03-13\",\n    \"TenNVBanHang\" : \"abc\",\n    \"TenNVLapPhieu\" : \"xyz\",\n    \"ChucVu\" : \"chu tich\",\n    \"MaKHLienQuan\" : \"000co\",\n    \"MaNVBanHang\" : \"5451nb\",\n    \"MaNVLapPhieu\" : \"o000\",\n    \"IDNhanVien\" : 1,\n    \"IDKhachHang\" : 1,\n    \"DSSanPham\": [\n        {\n            \"ID\": 7,\n            \"DonGia\": 2,\n            \"SoLuong\": 10\n        },\n        {\n            \"ID\": 11,\n            \"DonGia\": 4,\n            \"SoLuong\": 10\n        }\n        \n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lap_HoaDon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lap_HoaDon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_DSHoaDon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_DSHoaDon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_DSHoaDon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_HoaDon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"ID\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_HoaDon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_HoaDon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Luu_HoaDon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\" : 3,\n    \"MaHD\": \"hd01\",\n    \"MaChiNhanh\": \"cn20\",\n    \"MaSoThue\": \"xyz01\",\n    \"TenDoanhNghiep\": \"lap roi pha\",\n    \"DiaChiChiNhanh\": \"sao hoa\",\n    \"SoThue\": \"0000co\",\n    \"HinhThucThanhToan\": \"no\",\n    \"DaDuyet\": false,\n    \"NgayLapHD\" : \"2021-03-13\",\n    \"TenNVBanHang\" : \"abc\",\n    \"TenNVLapPhieu\" : \"xyz\",\n    \"ChucVu\" : \"chu tich\",\n    \"MaKHLienQuan\" : \"000co\",\n    \"MaNVBanHang\" : \"5451nb\",\n    \"MaNVLapPhieu\" : \"o000\",\n    \"IDNhanVien\" : 1,\n    \"IDKhachHang\" : 1,\n    \"DSSanPham\": [\n        {\n            \"ID\": 1,\n            \"DonGia\": 2,\n            \"SoLuong\": 10\n        },\n        {\n            \"ID\": 2,\n            \"DonGia\": 4,\n            \"SoLuong\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Luu_HoaDon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Luu_HoaDon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Duyet_HoaDon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Duyet_HoaDon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Duyet_HoaDon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xoa_HoaDon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\" : 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Xoa_HoaDon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Xoa_HoaDon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_DSSanPham",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/KeToan/Lay_DSSanPham",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"KeToan",
+								"Lay_DSSanPham"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GiaoVu",
+			"item": [
+				{
+					"name": "Lap_GiaoAn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MaGiaoAn\" : \"GA02\",\r\n    \"TenGiaoAn\" : \"Giao An Gym\",\r\n    \"TrangThai\" : true,\r\n    \"NgayLap\" : \"2021-03-23\",\r\n    \"GhiChu\" : \"abc\",\r\n    \"NhomGiaoAn\" : \"Giao An Gym\",\r\n    \"SoLuongTietHoc\" : \"45\",\r\n    \"SoLuongHocVien\" : \"20\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/GiaoVu/Lap_GiaoAn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"GiaoVu",
+								"Lap_GiaoAn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_DSGiaoAn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/GiaoVu/Lay_DSGiaoAn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"GiaoVu",
+								"Lay_DSGiaoAn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay_GiaoAn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/GiaoVu/Lay_GiaoAn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"GiaoVu",
+								"Lay_GiaoAn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Luu_GiaoAn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"maGiaoAn\": \"GA012\",\r\n    \"tenGiaoAn\": \"Giao An Gym\",\r\n    \"trangThai\": true,\r\n    \"ngayLap\": \"2021-03-23T00:00:00\",\r\n    \"ghiChu\": \"abc\",\r\n    \"nhomGiaoAn\": \"Giao An Gym\",\r\n    \"soLuongHocVien\": 20,\r\n    \"soLuongTietHoc\": 45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/GiaoVu/Luu_GiaoAn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"GiaoVu",
+								"Luu_GiaoAn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xoa_GiaoAn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/GiaoVu/Xoa_GiaoAn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"GiaoVu",
+								"Xoa_GiaoAn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PhanCong_GiaoAnHLV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IDGiaoAn\" : 1,\r\n    \"IDHuanLuyenVien\": 1\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/GiaoVu/PhanCong_GiaoAnHLV",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"GiaoVu",
+								"PhanCong_GiaoAnHLV"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
